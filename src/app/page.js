@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-function page() {
+function Home() {
   const [data, setData] = useState(null);
   const [resData, setResData] = useState(null);
 
@@ -99,4 +99,4 @@ function page() {
   );
 }
 
-export default page;
+export default Home;
