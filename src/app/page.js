@@ -56,7 +56,7 @@ function Home() {
           />
         </div>
 
-        <div className="px-4 h-12 flex mx-auto text-xl font-semibold bg-green-400">
+        <div className="px-4 rounded-lg h-12 flex mx-4 text-xl font-semibold bg-green-400">
           <div className="w-1/5 flex justify-center items-center">Name</div>
           <div className="w-2/5 flex justify-center items-center">Email</div>
           <div className="w-1/5 flex justify-center items-center">Phone</div>
@@ -72,10 +72,10 @@ function Home() {
               return (
                 <div
                   className={
-                    " px-4 h-12 flex mx-auto font-semibold " +
+                    " px-6 rounded-lg mx-4 h-12 flex font-semibold " +
                     (index % 2 ? "bg-gray-200 dark:bg-gray-800" : "")
                   }
-                  id={index}
+                  key={index}
                 >
                   <div className="w-1/5 flex justify-center items-center">
                     {item.name}
