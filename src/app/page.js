@@ -1,11 +1,9 @@
 "use client";
-
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function page() {
   const [data, setData] = useState(null);
   const [resData, setResData] = useState(null);
-  const [search, setSearch] = useState("");
 
   function updatedata(query) {
     console.log(query);
